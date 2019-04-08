@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    margin: 0 auto;
+}
+
+html, body
+{
+    height: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and (max-width: 990px) {
+    .container-fluid {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+nav {
+    font-size: 18px;
+}
+
+#head {
+    position: relative;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    height: 100%;
+    color: #aaaaaa;
+    text-align: center;
+    -webkit-animation: fadein 3s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 3s;
+    /* Internet Explorer */
+    animation: fadein 3s;
+    text-shadow: black 0.01em 0.01em 0.02em;
+    font-weight: 300;
+}
+
+#info {
+    background: #222222;
+    color: white;
+    text-align: center;
+    padding: 2.5em 0;
+    height: 100%;
+}
+
+#about {
+    margin: 20px;
+}
+
+#profile {
+    margin: 20px;
+}
+
+#skill {
+    margin: 20px;
+}
+
+#skill .skill_box {
+    margin-bottom: 10px;
+}
+
+#skill .skill_box .skill_name {
+    height:100%;
+    float: left;
+}
+
+#skill .skill_box .skill_star {
+    float: right;
+}
+
+#skill .skill_box .skill_star span.checked {
+    color: #fdb847;
+}
+
+#skill .skill_box .skill_star span {
+    color: #aaaaaa;
+}
+
+#footer {
+    background: #343a40 !important;
+    color: rgba(255,255,255,.5);
+    width: 100%;
+    padding-top: 20px;
+}
+
+#footer a{
+    color: rgba(255,255,255,.5)
+}
+
+#footer .col-lg-4 p, #footer .col-md-6 p {
+    display:inline;
+    padding-left: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    #head {
+        padding: 20em 0 20em 0;
+    }
+    #head .head-title {
+        font-size: 48px;
+    }
+    #info .info-title {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #head {
+        padding: 10em 0 10em 0;
+    }
+    #head .head-title {
+        font-size: 24px;
+    }
+    #info .info-title {
+        font-size: 24px;
+    }
+    #footer {
+        padding: 5px 16px;
+    }
+}
