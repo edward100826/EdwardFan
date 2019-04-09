@@ -3,8 +3,6 @@ $(function () {
     $('footer').load('footer.html');
 });
 
-$("[data-toggle=popover]").popover();
-
 $('.fa.fa-chevron-down.fa-5x').click(function(){
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
@@ -47,15 +45,7 @@ if (path.search('About') != -1) {
     InitChange(0);
 }
 
-function InitChange(class_index) {
-    $('#nav-fullscreen').removeClass('open');
-    $('#nav-overlay').removeClass('open');
-    $('#mobile-nav-button').removeClass('open');
-    $('#mobile-nav').removeClass('open');
-    ChangePageFunction(class_index);
-}
-
-function ChangePageFunction(pageNumber) {
+function InitChange(pageNumber) {
     let page;
     document.getElementById('index').classList.add('hide-page');
     document.getElementById('about').classList.add('hide-page');
@@ -69,27 +59,33 @@ function ChangePageFunction(pageNumber) {
         page = 'About';
         document.getElementById('about').classList.remove('hide-page');
     }
-    if (pageNumber == 5 || pageNumber == 2) {
+    if (pageNumber == 2) {
         page = 'Profile';
         document.getElementById('profile').classList.remove('hide-page');
     }
-    if (pageNumber == 6 || pageNumber == 3) {
+    if (pageNumber == 3) {
         page = 'Skill';
         document.getElementById('skill').classList.remove('hide-page');
     }
     setTimeout(() => {
         location.href = '#' + page;
     }, 200);
-    }
-    function mobileNavOnclick() {
-    $('#nav-fullscreen').toggleClass('open');
-    $('#nav-overlay').toggleClass('open');
-    $('#mobile-nav-button').toggleClass('open');
-    $('#mobile-nav').toggleClass('open');
-    }
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-    window.addEventListener('resize', () => {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+formatGoogleCalendar.init({
+    calendarUrl:
+      'https://www.googleapis.com/calendar/v3/calendars/t102590050@ntut.org.tw/events?key=AIzaSyCECkRA8wb8D2X-l1k0Onrj6xydwFiEchU',
+    past: false,
+    upcoming: true,
+    sameDayTimes: true,
+    dayNames: true,
+    pastTopN: -1,
+    upcomingTopN: 3,
+    itemsTagName: 'li',
+    upcomingSelector: '#events-upcoming',
+    recurringEvents: true,
+    upcomingHeading: '<h2>To-Do List</h2>',
+    pastHeading: '<h2>Past events</h2>',
+    format: ['*date*', ': ', '*summary*', ' — ', '*description*'],
+    timeMin: '2016-06-03T10:00:00-07:00',
+    timeMax: '2020-06-03T10:00:00-07:00'
 });

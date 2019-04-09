@@ -1,29 +1,15 @@
-<div id="mobile_nav_button" class="non_click" onclick="mobileNavOnclick()">
-    <div class="button_container" id="toggle">
-        <span class="top"></span>
-        <span class="middle"></span>
-        <span class="bottom"></span>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#" onclick="InitChange(0)">Edward</a>
     </div>
-</div>
-<div id="mobile_nav">
-    <div id="nav-overlay"></div>
-    <div id="nav-fullscreen">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand pages" href="#" onclick="InitChange(0)">Edward Fan</a>
-                </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse justify-content-end" id="myNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#" onclick="InitChange(1)">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" onclick="InitChange(2)">Profile</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" onclick="InitChange(3)">Skill</a></li>
-                    </ul>
-                </div> 
-            </div>
-        </nav>
-    </div>
-</div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse justify-content-end" id="myNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#" onclick="InitChange(1)">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" onclick="InitChange(2)">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" onclick="InitChange(3)">Skill</a></li>
+        </ul>
+    </div> 
+</nav>

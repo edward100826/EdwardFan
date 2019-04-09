@@ -1,22 +1,42 @@
 #skill{
-    margin: 20px;
-    .skill-box {
-        margin-bottom: 10px;
-        .skill-name {
-            height: 100%;
-            float: left;
+    padding: 20px;
+}
+
+.skill-box {
+    margin-bottom: 10px;
+    &:hover {
+        background-color: #05530f;
+        .skillStar span {
+            font-size: 110%;
         }
-        .skill-star {
-            float: right;
-            span {
-                color: #aaaaaa;
-                -webkit-transition: font-size 0.5s ease;
-                -moz-transition: font-size 0.5s ease;
-                -o-transition: font-size 0.5s ease;
-                transition: font-size 0.5s ease;
-            }
-            span.checked {
-                color: #fdb847;
+    }
+}
+.skill-name {
+    height: 100%;
+    float: left;
+    p {
+        margin: 8px 0;
+    }
+}
+.skill-star {
+    float: right;
+    margin-top: 6px;
+    span {
+        color: #aaaaaa;
+        -webkit-transition: font-size 0.5s ease;
+        transition: font-size 0.5s ease;
+    }
+    span.checked {
+        color: #fdb847;
+    }
+}
+
+@media not all and (pointer: coarse) {
+    .skill_box {
+        &:hover {
+            background-color: #05530f;
+            .skill-star span {
+                font-size: 110%;
             }
         }
     }

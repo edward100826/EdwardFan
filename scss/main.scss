@@ -1,26 +1,73 @@
 @import './index';
-@import './about';
 @import './footer';
+@import './about';
 @import './profile';
 @import './skill';
 
-$main_color: #aaaaaa;
-$bg-color: #aaaaaa;
+$main-bg-color: #222;
+$main-color: #fff;
+
 * {
     padding: 0;
     margin: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
-  overflow: hidden;
-  margin: 0 auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.main {
+    background-color: $main-bg-color;
+    color: $main-color;
 }
 
 .hide-page {
-  display: none;
+    display: none;
 }
 
-#main, #about, #profile, #skill {
-    animation-name: main_in;
-    animation-duration: 1s;
+hr {
+    border-top: solid 1px #fdb847 !important;
+    width: 96%;
+    height: 1px;
+    margin: 0 auto;
+}
+
+#index, #about, #profile, #skill {
+    -webkit-animation-name: main-in;
+            animation-name: main-in;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
     opacity: 1;
+}
+
+@-webkit-keyframes main-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes main-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hide-page {
+      display: block;
+    }
+    hr.hide-page {
+      margin: auto;
+    }
 }
