@@ -1,0 +1,16 @@
+footer {
+    background: #343a40 !important;
+    color: rgba(255,255,255,.5);
+    width: 100%;
+    padding: 20px 0;
+    .contact a {
+        color: rgba(255,255,255,.5);
+    }
+    .contact p {
+        display: inline;
+        padding-left: 1rem;
+    }
+    .copyright p{
+        margin: 0;
+    }
+}

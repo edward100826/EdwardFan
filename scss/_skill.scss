@@ -1,0 +1,23 @@
+#skill{
+    margin: 20px;
+    .skill-box {
+        margin-bottom: 10px;
+        .skill-name {
+            height: 100%;
+            float: left;
+        }
+        .skill-star {
+            float: right;
+            span {
+                color: #aaaaaa;
+                -webkit-transition: font-size 0.5s ease;
+                -moz-transition: font-size 0.5s ease;
+                -o-transition: font-size 0.5s ease;
+                transition: font-size 0.5s ease;
+            }
+            span.checked {
+                color: #fdb847;
+            }
+        }
+    }
+}
