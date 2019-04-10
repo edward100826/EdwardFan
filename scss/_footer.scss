@@ -1,11 +1,11 @@
+$main-bg-color: #343a40;
+$main-color: #aaa;
+
 footer {
-    background: #343a40 !important;
-    color: rgba(255,255,255,.5);
+    background: $main-bg-color;
+    color: $main-color;
     width: 100%;
     padding: 20px 0;
-    .contact a {
-        color: rgba(255,255,255,.5);
-    }
     .contact p {
         display: inline;
         padding-left: 1rem;
@@ -14,6 +14,6 @@ footer {
         margin-bottom: 0;
     }
     hr {
-        border-top: solid 1px rgba(255,255,255,.5) !important;
+        border-top: solid 1px $main-color !important;
     }
 }

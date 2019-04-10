@@ -135,7 +135,7 @@ function InitProfileData() {
     profileData.push({
         name: 'edwardfan.nhz.hk',
         description: 'My personal website. (This Website)',
-        tech_row: ['HTML', 'SCSS', 'JS'],
+        tech_row: ['HTML', 'SCSS', 'JS', 'Google API'],
         link: [{ type: 'Github', href: 'https://github.com/edward100826/EdwardFan' }],
         img: ''
     });
@@ -240,3 +240,21 @@ function InitProfileData() {
         rowDiv.insertAdjacentHTML('beforeend', html);
     });
 }
+
+formatGoogleCalendar.init({
+    calendarUrl: 'https://www.googleapis.com/calendar/v3/calendars/ntut.org.tw_mbok39gcoiftioqcea5814un38@group.calendar.google.com/events?key=AIzaSyChdNYlgRkwkAIRzFdEo9K_ESqMrtedLxI',
+    past: false,
+    upcoming: true,
+    sameDayTimes: false,
+    dayNames: true,
+    pastTopN: -1,
+    upcomingTopN: 3,
+    itemsTagName: 'li',
+    upcomingSelector: '#events-upcoming',
+    recurringEvents: true,
+    upcomingHeading: '<h2>To-Do List</h2>',
+    pastHeading: '<h2>Past events</h2>',
+    format: ['*date*', ': ', '*summary*'],
+    timeMin: '2016-06-03T10:00:00-07:00',
+    timeMax: '2020-06-03T10:00:00-07:00'
+});

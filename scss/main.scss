@@ -1,11 +1,11 @@
 @import './index';
 @import './footer';
-@import './about';
 @import './profile';
 @import './skill';
+@import './todo';
 
 $main-bg-color: #222;
-$main-color: #fff;
+$main-color: #aaa;
 
 * {
     padding: 0;
@@ -31,13 +31,23 @@ html {
 }
 
 hr {
-    border-top: solid 1px #fdb847 !important;
+    border-top: solid 1px #225566 !important;
     width: 96%;
     height: 1px;
     margin: 0 auto;
 }
 
-#index, #about, #profile, #skill {
+a {
+    color: $main-color !important;
+}
+
+#info, #about, #profile, #skill, #todo {
+    padding: 20px 0;
+    background-color: $main-bg-color;
+    color: $main-color;
+}
+
+#index, #about, #profile, #skill, #todo {
     -webkit-animation-name: main-in;
             animation-name: main-in;
     -webkit-animation-duration: 1s;
@@ -63,11 +73,8 @@ hr {
     }
 }
 
-@media screen and (max-width: 767px) {
-    .hide-page {
-      display: block;
-    }
+@media only screen and (max-width: 768px) {
     hr.hide-page {
-      margin: auto;
+        display: block;
     }
 }
