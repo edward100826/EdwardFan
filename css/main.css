@@ -41,6 +41,10 @@
   font-weight: bold;
 }
 
+.bg-text a {
+  color: aqua !important;
+}
+
 #info img {
   width: 100%;
 }
@@ -63,6 +67,11 @@ footer .copyright p {
 
 footer hr {
   border-top: solid 1px #aaa !important;
+}
+
+.about-me {
+  display: block;
+  padding: 10px 0;
 }
 
 .card-flip {
@@ -323,7 +332,7 @@ html {
 
 .main {
   background-color: #222;
-  color: #aaa;
+  color: #fff;
 }
 
 .hide-page {
@@ -338,13 +347,13 @@ hr {
 }
 
 a {
-  color: #aaa !important;
+  color: #fff !important;
 }
 
 #info, #about, #profile, #skill, #todo {
   padding: 20px 0;
   background-color: #222;
-  color: #aaa;
+  color: #fff;
 }
 
 #index, #about, #profile, #skill, #todo {

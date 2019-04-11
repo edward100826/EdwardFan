@@ -1,6 +1,7 @@
 $(function () {
     $('header').load('header.html');
     $('footer').load('footer.html');
+    $.getScript('js/lang.js');
 });
 
 $('.fa.fa-chevron-down.fa-5x').click(function(){

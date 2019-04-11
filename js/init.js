@@ -100,74 +100,91 @@ function InitEditingData() {
     });
     AddSkillElement(editingData, 'editing-row');
 }
+function AddLanguageElement(array, row) {
+    array.forEach(element => {
+        var html =
+            '<div class="col-md-6 skill-box"><div class="skill-name"><p key="' +
+            element.name +
+            '"></p></div><div class="skill-star"><span class="' +
+            element.checked[0] +
+            '">★</span><span class="' +
+            element.checked[1] +
+            '">★</span><span class="' +
+            element.checked[2] +
+            '">★</span><span class="' +
+            element.checked[3] +
+            '">★</span><span class="' +
+            element.checked[4] +
+            '">★</span></div></div>';
+        var rowDiv = document.getElementById(row);
+        rowDiv.insertAdjacentHTML('beforeend', html);
+    });
+}
 function InitLanguagesData() {
     languagesData.push({
-        name: 'Cantonese (Native)',
+        name: 'cantonese',
         checked: ['checked', 'checked', 'checked', 'checked', 'checked']
     });
     languagesData.push({
-        name: 'Mandarin',
+        name: 'mandarin',
         checked: ['checked', 'checked', 'checked', 'checked', 'checked']
     });
     languagesData.push({
-        name: 'English',
+        name: 'english',
         checked: ['checked', 'checked', 'checked', 'checked', ' ']
     });
     languagesData.push({
-        name: 'Spanish',
+        name: 'spanish',
         checked: ['checked', 'checked', 'checked', '', ' ']
     });
     languagesData.push({
-        name: 'Malay',
+        name: 'malay',
         checked: ['checked', 'checked', 'checked', '', ' ']
     });
     languagesData.push({
-        name: 'Korean',
+        name: 'korean',
         checked: ['checked', 'checked', '', '', ' ']
     });
     languagesData.push({
-        name: 'Japanese',
+        name: 'japanese',
         checked: ['checked', 'checked', '', '', ' ']
     });
-    AddSkillElement(languagesData, 'languages-row');
+    AddLanguageElement(languagesData, 'languages-row');
 }
 function InitProfileData() {
     profileData.push({
-        name: 'edwardfan.nhz.hk',
-        description: 'My personal website. (This Website)',
+        name: 'personal',
+        description: 'personal-description',
         tech_row: ['HTML', 'SCSS', 'JS', 'Google API'],
-        link: [{ type: 'Github', href: 'https://github.com/edward100826/EdwardFan' }],
+        link: [{ type: 'github', href: 'https://github.com/edward100826/EdwardFan' }],
         img: ''
     });
     profileData.push({
-        name: 'Final Year Project',
-        description:
-        'It is about collecting data from Taipei government and analysing the data with useful results.',
+        name: 'fyp',
+        description: 'fyp-description',
         tech_row: ['PHP', 'MySQL'],
         link: [
-        { type: 'Github', href: 'https://github.com/edward100826/FinalYearProject' },
+        { type: 'github', href: 'https://github.com/edward100826/FinalYearProject' },
         ],
         img: ''
     });
     profileData.push({
-        name: 'NTUT Empty Classroom',
-        description:
-          'The Android final project about searching for empty classroom in NTUT.',
-        tech_row: ['Android', 'Firebase', 'Teamwork'],
+        name: 'android-final',
+        description: 'android-final-description',
+        tech_row: ['Android', 'Firebase'],
         link: [
-          { type: 'Github', href: 'https://github.com/ngSgn/ntutAndroidFinal' }
+          { type: 'github', href: 'https://github.com/ngSgn/ntutAndroidFinal' }
         ],
         img: './img/profile/NTUT_emptyClassroom.png'
     });
     profileData.push({
-        name: 'Colorpella',
-        description:
-          'It is a freelance android app which is detecting the color and the sound frequency and sending the corresponding signal to arduino.',
-        tech_row: ['Android', 'JAVA', 'Teamwork'],
+        name: 'colorpella',
+        description: 'colorpella-description',
+        tech_row: ['Android', 'JAVA'],
         link: [
-          { type: 'Github', href: 'https://github.com/ngSgn/ColorPlayer' },
+          { type: 'github', href: 'https://github.com/ngSgn/ColorPlayer' },
           {
-            type: 'About',
+            type: 'about',
             href:
               'https://github.com/ngSgn/ColorPlayer/blob/master/%E8%AA%AA%E6%98%8E.pdf'
           }
@@ -175,34 +192,31 @@ function InitProfileData() {
         img: './img/profile/colorpella.jpeg'
     });
     profileData.push({
-        name: 'NTUT HKSA',
-        description:
-            "The final project of the Web Programming class. It is a register and information system for NTUT's Hong Kong students.",
-        tech_row: ['HTML', 'CSS', 'Firebase', 'Teamwork'],
+        name: 'ntuthksa',
+        description: 'ntuthksa-description',
+        tech_row: ['HTML', 'CSS', 'Firebase'],
         link: [
-          { type: 'Github', href: 'https://github.com/ngSgn/FinalWebProject' },
-          { type: 'Demo', href: 'https://ngsgn.github.io/FinalWebProject/' }
+          { type: 'github', href: 'https://github.com/ngSgn/FinalWebProject' },
+          { type: 'demo', href: 'https://ngsgn.github.io/FinalWebProject/' }
         ],
         img: './img/profile/ntut_hksa.png'
     });
     profileData.push({
-        name: 'MIT Taipei 2017',
-        description:
-            "The group product of the workshop of MIT Taipei 2017.",
-        tech_row: ['React', 'QGIS', 'Teamwork'],
+        name: 'mittp2017',
+        description: 'mittp2017-description',
+        tech_row: ['React', 'QGIS'],
         link: [
-          { type: 'Github', href: 'https://github.com/edward100826/MIT_Taipei17' },
+          { type: 'github', href: 'https://github.com/edward100826/MIT_Taipei17' },
         ],
         img: ''
     });
     profileData.push({
-        name: 'Project Nazca Server Website',
-        description:
-            "The official website for Project Nazca Server.",
+        name: 'pns',
+        description: 'pns-description',
         tech_row: ['PHP', 'HTML', 'CSS'],
         link: [
-          { type: 'Github', href: 'https://github.com/edward100826/Project-Nazca-Server-Website' },
-          { type: 'Demo', href: 'http://projectnazca.nhz.hk' }
+          { type: 'github', href: 'https://github.com/edward100826/Project-Nazca-Server-Website' },
+          { type: 'demo', href: 'http://projectnazca.nhz.hk' }
         ],
         img: ''
     });
@@ -215,9 +229,9 @@ function InitProfileData() {
             backData +=
               '<a href="' +
               element.href +
-              '" target="_blank"><p>' +
+              '" target="_blank"><p key="' +
               element.type +
-              '</p></a>';
+              '"></p></a>';
         });
         element.tech_row.forEach(element => {
             techData += '<div class="tech-box">' + element + '</div>';
@@ -229,11 +243,11 @@ function InitProfileData() {
             backData +
             '</div></div></div><div class="card-bg" style="background-image: url(' +
             element.img +
-            ');"></div><div class="front"><div class="profile-des-box"><h5>' +
+            ');"></div><div class="front"><div class="profile-des-box"><h5 key="' +
             element.name +
-            '</h5><hr /><p>' +
+            '"></h5><hr /><p key="' +
             element.description +
-            '</p></div><div class="tech_row"><hr />' +
+            '"></p></div><div class="tech_row"><hr />' +
             techData +
             '</div></div></div></div></div></div></div>';
         var rowDiv = document.getElementById('profile-row');

@@ -1,11 +1,12 @@
 @import './index';
 @import './footer';
+@import './about';
 @import './profile';
 @import './skill';
 @import './todo';
 
 $main-bg-color: #222;
-$main-color: #aaa;
+$main-color: #fff;
 
 * {
     padding: 0;
