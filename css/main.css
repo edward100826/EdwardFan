@@ -46,12 +46,12 @@
   border-radius: 2px;
 }
 
-.modal-dialog {
-  max-width: 100% !important;
+.modal .modal-dialog {
+  max-width: 900px;
 }
 
-.modal-body {
-  padding: 0 !important;
+.modal .modal-dialog .modal-body {
+  padding: 0;
 }
 
 @media (min-width: 768px) {
