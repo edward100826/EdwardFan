@@ -7,6 +7,7 @@
 #head .fa {
   text-decoration: none;
   border: none;
+  color: aqua !important;
 }
 
 .bg-image {
@@ -15,7 +16,7 @@
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
-  height: 100%;
+  height: 75%;
   filter: blur(5px);
   -webkit-filter: blur(5px);
 }
@@ -41,17 +42,29 @@
   font-weight: bold;
 }
 
-.bg-text a {
-  color: aqua !important;
+.carousel-multi-item .card img {
+  border-radius: 2px;
 }
 
-#info img {
-  width: 100%;
+.modal-dialog {
+  max-width: 100% !important;
+}
+
+.modal-body {
+  padding: 0 !important;
+}
+
+@media (min-width: 768px) {
+  .carousel-multi-item .col-md-3 {
+    float: left;
+    width: 25%;
+    max-width: 100%;
+  }
 }
 
 footer {
   background: #343a40;
-  color: #aaa;
+  color: #fff;
   width: 100%;
   padding: 20px 0;
 }
@@ -61,12 +74,20 @@ footer .contact p {
   padding-left: 1rem;
 }
 
+footer .lang-footer {
+  margin: 10px auto;
+}
+
+footer .lang-footer a {
+  margin: auto 20px;
+}
+
 footer .copyright p {
   margin-bottom: 0;
 }
 
 footer hr {
-  border-top: solid 1px #aaa !important;
+  border-top: solid 1px #fff !important;
 }
 
 .about-me {

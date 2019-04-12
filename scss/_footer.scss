@@ -1,5 +1,5 @@
 $main-bg-color: #343a40;
-$main-color: #aaa;
+$main-color: #fff;
 
 footer {
     background: $main-bg-color;
@@ -9,6 +9,12 @@ footer {
     .contact p {
         display: inline;
         padding-left: 1rem;
+    }
+    .lang-footer {
+        margin: 10px auto;
+        a {
+            margin: auto 20px;
+        }
     }
     .copyright p{
         margin-bottom: 0;

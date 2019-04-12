@@ -22,39 +22,194 @@
                 </div>
             </div>
             <div id="info">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <h1 key="trip"></h1>
-                        </div>
-                        <div class="col-12">
-                            <div id="profile-carousel" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#profile-carousel" data-slide-to="0" class="active"></li>
-                                    <li data-target="#profile-carousel" data-slide-to="1"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="img/carousel.jpg">
+                <div class="text-center">
+                    <h1 key="photos"></h1>
+                </div>
+                <div id="profile-carousel" class="carousel slide carousel-multi-item" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="col-md-3 mb-3">
+                                    <div class="card" data-toggle="modal" data-target="#tokyoModal">   
+                                        <img class="img-fluid" src="img/Tokyo/1.jpg">
                                         <div class="carousel-caption">
                                             <h3 key='carousel-1'></h3>
                                             <p>2017</p>
                                         </div>
                                     </div>
-                                    <div class="carousel-item">
-                                        <img src="img/carousel1.jpg">
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <div class="card" data-toggle="modal" data-target="#taitungModal">   
+                                        <img class="img-fluid" src="img/Taitung/1.JPG">
                                         <div class="carousel-caption">
                                             <h3 key='carousel-2'></h3>
-                                            <p>2018</p>
+                                            <p>2017</p>
                                         </div>
                                     </div>
                                 </div>
-                                <a class="carousel-control-prev" href="#profile-carousel" data-slide="prev">
-                                    <span class="carousel-control-prev-icon"></span>
-                                </a>
-                                <a class="carousel-control-next" href="#profile-carousel" data-slide="next">
-                                    <span class="carousel-control-next-icon"></span>
-                                </a>
+                                <div class="col-md-3 mb-3">
+                                    <div class="card" data-toggle="modal" data-target="#osakaModal">   
+                                        <img class="img-fluid" src="img/Osaka/1.jpg">
+                                        <div class="carousel-caption">
+                                            <h3 key='carousel-3'></h3>
+                                            <p>2016</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <div class="card" data-toggle="modal" data-target="#seoulModal">   
+                                        <img class="img-fluid" src="img/Seoul/1.jpg">
+                                        <div class="carousel-caption">
+                                            <h3 key='carousel-4'></h3>
+                                            <p>2015</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="col-md-3 mb-3">
+                                    <div class="card" data-toggle="modal" data-target="#kaohsiungModal">   
+                                        <img class="img-fluid" src="img/Kaohsiung/1.jpg">
+                                        <div class="carousel-caption">
+                                            <h3 key='carousel-1'></h3>
+                                            <p>2017</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#profile-carousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#profile-carousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+                <div class="modal fade" id="tokyoModal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="image">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div id="tokyoCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/Tokyo/1.jpg" class="w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/Tokyo/2.jpg" class="w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/Tokyo/3.jpg" class="w-100">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#tokyoCarousel" data-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#tokyoCarousel" data-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="taitungModal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="image">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div id="taitungCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/Taitung/1.JPG" class="w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                                <img src="img/Taitung/2.JPG" class="w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/Taitung/3.JPG" class="w-100">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#taitungCarousel" data-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#taitungCarousel" data-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="osakaModal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="image">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div id="osakaCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/Osaka/1.JPG" class="w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                                <img src="img/Osaka/2.jpg" class="w-100">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#osakaCarousel" data-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#osakaCarousel" data-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="seoulModal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="image">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div id="seoulCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/Seoul/1.jpg" class="w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                                <img src="img/Seoul/2.jpg" class="w-100">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#seoulCarousel" data-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#seoulCarousel" data-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="kaohsiungModal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="image">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div id="kaohsiungCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/Kaohsiung/1.jpg" class="w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                                <img src="img/Kaohsiung/2.jpg" class="w-100">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#kaohsiungCarousel" data-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#kaohsiungCarousel" data-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>

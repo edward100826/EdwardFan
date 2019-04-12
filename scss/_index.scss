@@ -5,6 +5,7 @@
     .fa {
         text-decoration: none;
         border: none;
+        color: aqua !important;
     }
 }
 
@@ -14,7 +15,7 @@
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 75%;
     filter: blur(5px);
     -webkit-filter: blur(5px);
 }
@@ -40,12 +41,21 @@
     font-weight: bold;
 }
 
-.bg-text a{
-    color: aqua !important;
+.carousel-multi-item .card img {
+    border-radius: 2px;
 }
 
-#info {
-    img {
-        width: 100%;
-    }
+.modal-dialog {
+    max-width: 100% !important;
+}
+
+.modal-body {
+    padding: 0 !important;
+}
+
+@media (min-width: 768px) {
+    .carousel-multi-item .col-md-3 {
+    float: left;
+    width: 25%;
+    max-width: 100%; }
 }

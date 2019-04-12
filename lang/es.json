@@ -1,8 +1,10 @@
 {
     "welcome" : "Bienvenido a el Sitio Web de Edward Fan",
-    "trip" : "Viaje",
+    "photos" : "Fotos",
     "carousel-1" : "Tokio",
-    "carousel-2" : "Kagoshima",
+    "carousel-2" : "Taitung",
+    "carousel-3" : "Osaka",
+    "carousel-4" : "Seoul",
     "about" : "Acerca",
     "about-me" : "Acerca de mí",
     "about-me-1" : "My name is Edward Fan, who is an undergraduate student major in Computer Science.",
