@@ -40,7 +40,7 @@ function InitChange(pageNumber) {
     }
     setTimeout(() => {
         location.href = '#' + page;
-    }, 200);
+    }, 0);
 }
 
 let path = window.location.hash.substr(1);
@@ -55,3 +55,26 @@ if (path.search('About') != -1) {
 } else {
     InitChange(0);
 }
+
+$('.card-flip').click(function() {
+    if (isMobileBool) $(this).toggleClass('hover');
+});
+$('.skill_box').click(function() {
+    if (isMobileBool) $(this).toggleClass('hover');
+});
+function detectmob() {
+    if (
+        navigator.userAgent.match(/Android/i) ||
+        navigator.userAgent.match(/webOS/i) ||
+        navigator.userAgent.match(/iPhone/i) ||
+        navigator.userAgent.match(/iPad/i) ||
+        navigator.userAgent.match(/iPod/i) ||
+        navigator.userAgent.match(/BlackBerry/i) ||
+        navigator.userAgent.match(/Windows Phone/i)
+    ) {
+        return true;
+    } else {
+        return false;
+    }
+}
+var isMobileBool = detectmob();
