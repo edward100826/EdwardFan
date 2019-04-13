@@ -11,6 +11,21 @@ $('.fa.fa-chevron-down.fa-5x').click(function(){
     return false;
 });
 
+setTimeout(() => {
+    let path = window.location.hash.substr(1);
+    if (path.search('About') != -1) {
+        InitChange(1);
+    } else if (path.search('Profile') != -1) {
+        InitChange(2);
+    } else if (path.search('Skill') != -1) {
+        InitChange(3);
+    } else if (path.search('Todo') != -1) {
+        InitChange(4);
+    } else {
+        InitChange(0);
+    }
+}, 1500);
+
 function InitChange(pageNumber) {
     let page;
     document.getElementById('index').classList.add('hide-page');
@@ -40,26 +55,13 @@ function InitChange(pageNumber) {
     }
     setTimeout(() => {
         location.href = '#' + page;
-    }, 0);
-}
-
-let path = window.location.hash.substr(1);
-if (path.search('About') != -1) {
-    InitChange(1);
-} else if (path.search('Profile') != -1) {
-    InitChange(2);
-} else if (path.search('Skill') != -1) {
-    InitChange(3);
-} else if (path.search('Todo') != -1) {
-    InitChange(4);
-} else {
-    InitChange(0);
+    }, 200);
 }
 
 $('.card-flip').click(function() {
     if (isMobileBool) $(this).toggleClass('hover');
 });
-$('.skill_box').click(function() {
+$('.skill-box').click(function() {
     if (isMobileBool) $(this).toggleClass('hover');
 });
 function detectmob() {
