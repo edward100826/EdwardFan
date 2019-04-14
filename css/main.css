@@ -60,28 +60,6 @@
   object-fit: contain;
 }
 
-#photo-carousel-tab, #photo-carousel-mb {
-  display: none;
-}
-
-@media (max-width: 991px) {
-  #photo-carousel-pc, #photo-carousel-mb {
-    display: none;
-  }
-  #photo-carousel-tab {
-    display: block;
-  }
-}
-
-@media (max-width: 767px) {
-  #photo-carousel-pc, #photo-carousel-tab {
-    display: none;
-  }
-  #photo-carousel-mb {
-    display: block;
-  }
-}
-
 footer {
   background: #343a40;
   color: #fff;
@@ -112,7 +90,7 @@ footer hr {
 
 .about-me {
   display: block;
-  padding: 10px 0;
+  padding-top: 20px;
 }
 
 .card-flip {
@@ -374,10 +352,6 @@ html {
 .main {
   background-color: #222;
   color: #fff;
-}
-
-.hide-page {
-  display: none;
 }
 
 hr {

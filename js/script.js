@@ -28,30 +28,30 @@ setTimeout(() => {
 
 function InitChange(pageNumber) {
     let page;
-    document.getElementById('index').classList.add('hide-page');
-    document.getElementById('about').classList.add('hide-page');
-    document.getElementById('profile').classList.add('hide-page');
-    document.getElementById('skill').classList.add('hide-page');
-    document.getElementById('todo').classList.add('hide-page');
+    document.getElementById('index').classList.add('d-none');
+    document.getElementById('about').classList.add('d-none');
+    document.getElementById('profile').classList.add('d-none');
+    document.getElementById('skill').classList.add('d-none');
+    document.getElementById('todo').classList.add('d-none');
     if (pageNumber == 0) {
         page = 'Index';
-        document.getElementById('index').classList.remove('hide-page');
+        document.getElementById('index').classList.remove('d-none');
     }
     if (pageNumber == 1) {
         page = 'About';
-        document.getElementById('about').classList.remove('hide-page');
+        document.getElementById('about').classList.remove('d-none');
     }
     if (pageNumber == 2) {
         page = 'Profile';
-        document.getElementById('profile').classList.remove('hide-page');
+        document.getElementById('profile').classList.remove('d-none');
     }
     if (pageNumber == 3) {
         page = 'Skill';
-        document.getElementById('skill').classList.remove('hide-page');
+        document.getElementById('skill').classList.remove('d-none');
     }
     if (pageNumber == 4) {
         page = 'Todo';
-        document.getElementById('todo').classList.remove('hide-page');
+        document.getElementById('todo').classList.remove('d-none');
     }
     setTimeout(() => {
         location.href = '#' + page;

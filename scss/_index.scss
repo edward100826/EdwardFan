@@ -57,25 +57,3 @@
         }
     }
 }
-
-#photo-carousel-tab, #photo-carousel-mb {
-    display: none;
-}
-
-@media (max-width: 991px) {
-    #photo-carousel-pc, #photo-carousel-mb {
-        display: none;
-    }
-    #photo-carousel-tab {
-        display: block;
-    }
-}
-
-@media (max-width: 767px) {
-    #photo-carousel-pc, #photo-carousel-tab {
-        display: none;
-    }
-    #photo-carousel-mb {
-        display: block;
-    }
-}
