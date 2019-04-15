@@ -11,20 +11,18 @@ $('.fa.fa-chevron-down.fa-5x').click(function(){
     return false;
 });
 
-setTimeout(() => {
-    let path = window.location.hash.substr(1);
-    if (path.search('About') != -1) {
-        InitChange(1);
-    } else if (path.search('Profile') != -1) {
-        InitChange(2);
-    } else if (path.search('Skill') != -1) {
-        InitChange(3);
-    } else if (path.search('Todo') != -1) {
-        InitChange(4);
-    } else {
-        InitChange(0);
-    }
-}, 1500);
+let path = window.location.hash.substr(1);
+if (path.search('About') != -1) {
+    InitChange(1);
+} else if (path.search('Profile') != -1) {
+    InitChange(2);
+} else if (path.search('Skill') != -1) {
+    InitChange(3);
+} else if (path.search('Todo') != -1) {
+    InitChange(4);
+} else {
+    InitChange(0);
+}
 
 function InitChange(pageNumber) {
     let page;
@@ -55,13 +53,16 @@ function InitChange(pageNumber) {
     }
     setTimeout(() => {
         location.href = '#' + page;
-    }, 200);
+    }, 10);
 }
 
 $('.card-flip').click(function() {
     if (isMobileBool) $(this).toggleClass('hover');
 });
 $('.skill-box').click(function() {
+    if (isMobileBool) $(this).toggleClass('hover');
+});
+$('#search').click(function() {
     if (isMobileBool) $(this).toggleClass('hover');
 });
 function detectmob() {
@@ -80,3 +81,10 @@ function detectmob() {
     }
 }
 var isMobileBool = detectmob();
+
+window.onkeydown=function(event){
+    if(event.keyCode==13){
+        sendNew();
+        return false;
+    }
+}

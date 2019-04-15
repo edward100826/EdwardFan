@@ -45,7 +45,7 @@ a {
     color: $main-color;
 }
 
-#index, #about, #profile, #skill, #todo {
+header, #index, #about, #profile, #skill, #todo, footer {
     -webkit-animation-name: main-in;
             animation-name: main-in;
     -webkit-animation-duration: 1s;
