@@ -1,9 +1,9 @@
 function setLanguage(lang) {
 	$.getJSON('lang/' + lang + '.json', translate);
-	$('#en').removeClass('hide-page');
-	$('#zh').removeClass('hide-page');
-	$('#es').removeClass('hide-page');
-	$('#' + lang).addClass('hide-page');
+	$('#en').removeClass('d-none');
+	$('#zh').removeClass('d-none');
+	$('#es').removeClass('d-none');
+	$('#' + lang).addClass('d-none');
 }
 
 var translate = function (jsdata) {	

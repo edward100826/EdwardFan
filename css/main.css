@@ -1,3 +1,45 @@
+#search {
+  padding: .5rem 0;
+  margin-bottom: 2rem;
+  width: 40px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#search #search-bar {
+  padding-left: 1.5rem;
+  display: none;
+}
+
+#search #search-icon {
+  color: #fff;
+  position: absolute;
+  line-height: 2.7rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#search:hover {
+  width: 200px;
+  margin-bottom: 0;
+}
+
+#search:hover #search-bar {
+  display: block;
+}
+
+#search:hover #search-icon {
+  color: blue;
+  line-height: 2.5rem;
+  padding-left: .5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  #search {
+    padding: 0 .5rem;
+  }
+}
+
 #head {
   text-shadow: black 0.01em 0.01em 0.02em;
   font-weight: 300;
