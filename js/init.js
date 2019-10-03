@@ -60,6 +60,10 @@ function InitProgramData() {
         checked: ['checked', 'checked', 'checked', 'checked', ' ']
     });
     programData.push({
+        name: 'Laravel',
+        checked: ['checked', 'checked', 'checked', '', ' ']
+    });
+    programData.push({
         name: 'Firebase',
         checked: ['checked', 'checked', 'checked', '', ' ']
     });
@@ -153,6 +157,20 @@ function InitLanguagesData() {
 }
 function InitProfileData() {
     profileData.push({
+        name: 'jobspost',
+        description: 'jobspost-description',
+        tech_row: ['HTML', 'SCSS', 'JS', 'PHP', 'MySQL', 'CentOS'],
+        link: [{ type: 'demo', href: 'https://www.jobspost.com.hk/' }],
+        img: ''
+    });
+    profileData.push({
+        name: 'skzgroup',
+        description: 'skzgroup-description',
+        tech_row: ['HTML', 'SCSS', 'JS', 'PHP', 'Google API'],
+        link: [{ type: 'demo', href: 'https://www.skzgroup.com.hk/' }],
+        img: ''
+    });
+    profileData.push({
         name: 'personal',
         description: 'personal-description',
         tech_row: ['HTML', 'SCSS', 'JS', 'Google API'],
@@ -164,8 +182,7 @@ function InitProfileData() {
         description: 'fyp-description',
         tech_row: ['PHP', 'MySQL'],
         link: [
-        { type: 'github', href: 'https://github.com/edward100826/FinalYearProject' },
-        ],
+        { type: 'github', href: 'https://github.com/edward100826/FinalYearProject' }],
         img: ''
     });
     profileData.push({
@@ -173,8 +190,7 @@ function InitProfileData() {
         description: 'android-final-description',
         tech_row: ['Android', 'Firebase'],
         link: [
-          { type: 'github', href: 'https://github.com/ngSgn/ntutAndroidFinal' }
-        ],
+          { type: 'github', href: 'https://github.com/ngSgn/ntutAndroidFinal' }],
         img: './img/profile/NTUT_emptyClassroom.png'
     });
     profileData.push({
@@ -202,11 +218,20 @@ function InitProfileData() {
         img: './img/profile/ntut_hksa.png'
     });
     profileData.push({
+        name: 'drright',
+        description: 'drright-description',
+        tech_row: ['React.js', 'CSS', 'Redux'],
+        link: [
+          { type: 'demo', href: 'https://www.drright.me/' }
+        ],
+        img: ''
+    });
+    profileData.push({
         name: 'mittp2017',
         description: 'mittp2017-description',
         tech_row: ['React', 'QGIS'],
         link: [
-          { type: 'github', href: 'https://github.com/edward100826/MIT_Taipei17' },
+          { type: 'github', href: 'https://github.com/edward100826/MIT_Taipei17' }
         ],
         img: ''
     });
@@ -237,7 +262,7 @@ function InitProfileData() {
             techData += '<div class="tech-box">' + element + '</div>';
         });
         var html =
-            '<div class="col-xl-4 col-md-6 col-12 profile-card"><div class="card-box"><div class="row card-h"><div class="card-flip"><div class="flip"><div class="back" style="background-image: url(' +
+            '<div class="col-xl-4 col-md-6 profile-card"><div class="card-box"><div class="row card-h"><div class="card-flip"><div class="flip"><div class="back" style="background-image: url(' +
             element.img +
             ');"><div class="back-box"><div>' +
             backData +
@@ -247,30 +272,10 @@ function InitProfileData() {
             element.name +
             '"></h5><hr /><p key="' +
             element.description +
-            '"></p></div><div class="tech_row"><hr />' +
+            '"></p></div><div class="tech-row"><hr />' +
             techData +
             '</div></div></div></div></div></div></div>';
         var rowDiv = document.getElementById('profile-row');
         rowDiv.insertAdjacentHTML('beforeend', html);
     });
 }
-
-setTimeout(() => {
-    formatGoogleCalendar.init({
-        calendarUrl: 'https://www.googleapis.com/calendar/v3/calendars/ntut.org.tw_mbok39gcoiftioqcea5814un38@group.calendar.google.com/events?key=AIzaSyD5yt2wtb6VUhENA0b83JppPu1q0xx45qw',
-        past: false,
-        upcoming: true,
-        sameDayTimes: false,
-        dayNames: true,
-        pastTopN: -1,
-        upcomingTopN: 3,
-        itemsTagName: 'li',
-        upcomingSelector: '#events-upcoming',
-        recurringEvents: true,
-        upcomingHeading: '<h2>To-Do List</h2>',
-        pastHeading: '<h2>Past events</h2>',
-        format: ['*date*', ': ', '*summary*'],
-        timeMin: '2016-06-03T10:00:00-07:00',
-        timeMax: '2020-06-03T10:00:00-07:00'
-    });
-}, 3000);
