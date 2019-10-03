@@ -161,36 +161,37 @@ function InitProfileData() {
         description: 'jobspost-description',
         tech_row: ['HTML', 'SCSS', 'JS', 'PHP', 'MySQL', 'CentOS'],
         link: [{ type: 'demo', href: 'https://www.jobspost.com.hk/' }],
-        img: ''
+        img: './img/profile/jobspost.png'
     });
     profileData.push({
         name: 'skzgroup',
         description: 'skzgroup-description',
         tech_row: ['HTML', 'SCSS', 'JS', 'PHP', 'Google API'],
         link: [{ type: 'demo', href: 'https://www.skzgroup.com.hk/' }],
-        img: ''
+        img: './img/profile/skzgroup.jpg'
     });
     profileData.push({
         name: 'personal',
         description: 'personal-description',
         tech_row: ['HTML', 'SCSS', 'JS', 'Google API'],
-        link: [{ type: 'github', href: 'https://github.com/edward100826/EdwardFan' }],
-        img: ''
+        link: [
+            { type: 'github', href: 'https://github.com/edward100826/EdwardFan' },
+            { type: 'demo', href: 'http://www.edwardfan.nhz.hk/' }
+        ],
+        img: './img/bg.jpg'
     });
     profileData.push({
         name: 'fyp',
         description: 'fyp-description',
         tech_row: ['PHP', 'MySQL'],
-        link: [
-        { type: 'github', href: 'https://github.com/edward100826/FinalYearProject' }],
+        link: [{ type: 'github', href: 'https://github.com/edward100826/FinalYearProject' }],
         img: ''
     });
     profileData.push({
         name: 'android-final',
         description: 'android-final-description',
         tech_row: ['Android', 'Firebase'],
-        link: [
-          { type: 'github', href: 'https://github.com/ngSgn/ntutAndroidFinal' }],
+        link: [{ type: 'github', href: 'https://github.com/ngSgn/ntutAndroidFinal' }],
         img: './img/profile/NTUT_emptyClassroom.png'
     });
     profileData.push({
@@ -211,28 +212,21 @@ function InitProfileData() {
         name: 'ntuthksa',
         description: 'ntuthksa-description',
         tech_row: ['HTML', 'CSS', 'Firebase'],
-        link: [
-          { type: 'github', href: 'https://github.com/ngSgn/FinalWebProject' },
-          { type: 'demo', href: 'https://ngsgn.github.io/FinalWebProject/' }
-        ],
+        link: [{ type: 'github', href: 'https://github.com/ngSgn/FinalWebProject' }],
         img: './img/profile/ntut_hksa.png'
     });
     profileData.push({
         name: 'drright',
         description: 'drright-description',
         tech_row: ['React.js', 'CSS', 'Redux'],
-        link: [
-          { type: 'demo', href: 'https://www.drright.me/' }
-        ],
-        img: ''
+        link: [{ type: 'demo', href: 'https://www.drright.me/' }],
+        img: './img/profile/drright.jpg'
     });
     profileData.push({
         name: 'mittp2017',
         description: 'mittp2017-description',
         tech_row: ['React', 'QGIS'],
-        link: [
-          { type: 'github', href: 'https://github.com/edward100826/MIT_Taipei17' }
-        ],
+        link: [{ type: 'github', href: 'https://github.com/edward100826/MIT_Taipei17' }],
         img: ''
     });
     profileData.push({
@@ -243,7 +237,7 @@ function InitProfileData() {
           { type: 'github', href: 'https://github.com/edward100826/Project-Nazca-Server-Website' },
           { type: 'demo', href: 'http://projectnazca.nhz.hk' }
         ],
-        img: ''
+        img: './img/profile/pns.png'
     });
   
 
