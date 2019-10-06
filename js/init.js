@@ -157,6 +157,13 @@ function InitLanguagesData() {
 }
 function InitProfileData() {
     profileData.push({
+        name: 'hkoutlanders',
+        description: 'hkoutlanders-description',
+        tech_row: ['HTML', 'Sass', 'JS', 'PHP', 'MySQL', 'CentOS', 'Laravel'],
+        link: [{ type: 'demo', href: 'https://www.hkoutlanders.com/' }],
+        img: './img/profile/hkoutlanders.png'
+    });
+    profileData.push({
         name: 'jobspost',
         description: 'jobspost-description',
         tech_row: ['HTML', 'SCSS', 'JS', 'PHP', 'MySQL', 'CentOS'],
